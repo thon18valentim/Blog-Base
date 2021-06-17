@@ -1,0 +1,27 @@
+#welcome-sec{
+    margin-top: 25px;
+    background-color: #52ccc0;
+}
+
+#tutorial-header{
+    margin-top: 25px;
+}
+
+#tutorial-item{
+    height: 200px;
+    cursor: pointer;
+}
+
+#tutorial-img{
+    width: 100%;
+    height: 100%;
+}
+
+#article-img{
+    width: 800px;
+    height: 400px;
+}
+
+#navTop{
+    background-color: #52ccc0;
+}

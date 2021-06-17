@@ -1,0 +1,263 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Base - Home</title>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./images/computador.png">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light" id="navTop">
+        <a class="navbar-brand" href="index.html">VM LEARNING</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon">
+              <span></span>
+          </span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#welcome-sec">Welcome<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#learning-sec">Learning<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown active">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Tutorials
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="///C:/Users/PC_USER/Documents/Projetos/TrabalhoDeBases/download.html" target="_blank">Download da Virtual Box</a>
+                  <a class="dropdown-item" href="///C:/Users/PC_USER/Documents/Projetos/TrabalhoDeBases/config.html">Configuração de IP</a>
+                  <a class="dropdown-item" href="///C:/Users/PC_USER/Documents/Projetos/TrabalhoDeBases/conifgGroup.html">Configuração de Grupo</a>
+                  <a class="dropdown-item" href="///C:/Users/PC_USER/Documents/Projetos/TrabalhoDeBases/pastaComp.html">Pasta Compartilhada</a>
+                  <a class="dropdown-item" href="///C:/Users/PC_USER/Documents/Projetos/TrabalhoDeBases/configRemote.html">Configuração de Acesso Remoto</a>
+                  <a class="dropdown-item" href="///C:/Users/PC_USER/Documents/Projetos/TrabalhoDeBases/usuario.html">Criação de usuários</a>
+                  <a class="dropdown-item" href="///C:/Users/PC_USER/Documents/Projetos/TrabalhoDeBases/configDns.html">Função DNS</a>
+                  <a class="dropdown-item" href="///C:/Users/PC_USER/Documents/Projetos/TrabalhoDeBases/configDHCP.html">Função DHCP</a>
+                  <a class="dropdown-item" href="///C:/Users/PC_USER/Documents/Projetos/TrabalhoDeBases/configFTP.html">Função FTP</a>
+                  <a class="dropdown-item" href="///C:/Users/PC_USER/Documents/Projetos/TrabalhoDeBases/configIIS.html">Função IIS</a>
+                </div>
+              </li>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <!-- Welcome -->
+        <div class="row">
+            <div class="col-12">
+                <div class="jumbotron" id="welcome-sec">
+                    <h1>Welcome</h1>
+                    <hr class="my-4">
+                    <p>
+                        O presente website tem como objetivo demonstrar o passo a passo de como configurar tópicos
+                        específicos relacionados a Sistemas Computacionais de Base. Logo, as páginas desenvolvidas
+                        tem objetivo acadêmico e didático. Os criadores dessa página são: Bernardo Carneiro, Heitor Hellou
+                        e Othon Valentim.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tutorials -->
+        <h1 id="learning-sec">Learning</h1>
+        <hr class="my-4">
+        <div class="row" id="tutorial-item"  onclick="openPage('file:///C:/Users/PC_USER/Documents/Projetos/TrabalhoDeBases/download.html')">
+            <div class="col-md-4 col-sm-6">
+                <img src="images/virtualbox.png" alt="tutorial" id="tutorial-img">
+            </div>
+            <div class="col-md-8 col-sm-6">
+                <h1>Download da Virtual Box</h1>
+                <p>
+                    Siga o nosso passo a passo para a realização do Download da Virtual Box.
+                    Para prosseguir com os demais tutoriais, é interessante que todo usuário
+                    siga o presente artigo como base. Então, nos siga nessa nova aventura pelo
+                    mundo da computação.     
+                    
+                    <br>
+                    <br>
+                    <strong>Por.: Bernardo Carneiro</strong>
+                </p>
+            </div>
+        </div>
+        <hr class="my-4">
+        <div class="row" id="tutorial-item" onclick="openPage('file:///C:/Users/PC_USER/Documents/Projetos/TrabalhoDeBases/config.html')">
+            <div class="col-md-4 col-sm-6">
+                <img src="./thumbs/confip.jpg" alt="tutorial" id="tutorial-img">
+            </div>
+            <div class="col-md-8 col-sm-6">
+                <h1>Configuração de IP</h1>
+                <p>
+                    É crucial que o IP das suas máquinas estejam configurados de maneira correta, senão,
+                    todos os passos posteriores serão altamente prejudicados.
+
+                    <br>
+                    <br>
+                    <strong>Por.: Bernardo Carneiro</strong>
+                </p>
+            </div>
+        </div>
+        <hr class="my-4">
+        <div class="row" id="tutorial-item" onclick="openPage('file:///C:/Users/PC_USER/Documents/Projetos/TrabalhoDeBases/conifgGroup.html')">
+            <div class="col-md-4 col-sm-6">
+                <img src="./thumbs/grupo.jpg" alt="tutorial" id="tutorial-img">
+            </div>
+            <div class="col-md-8 col-sm-6">
+                <h1>Configuração de Grupo</h1>
+                <p>
+                    Nesse passo passo você irá nos acompanhar na criação de um Grupo de Trabalho,
+                    importante funcionalidade disponível para o nosso uso.
+
+                    <br>
+                    <br>
+                    <strong>Por.: Bernardo Carneiro</strong>
+                </p>
+            </div>
+        </div>
+        <hr class="my-4">
+        <hr class="my-4">
+        <div class="row" id="tutorial-item" onclick="openPage('file:///C:/Users/PC_USER/Documents/Projetos/TrabalhoDeBases/pastaComp.html')">
+            <div class="col-4">
+                <img src="./thumbs/pastaCompartilhada.jpg" alt="tutorial" id="tutorial-img">
+            </div>
+            <div class="col-8">
+                <h1>Pasta Compartilhada</h1>
+                <p>
+                    Uma Pasta Compartilhada pode beneficiar diversas equipes de trabalho ao redor 
+                    do mundo. Por isso, esse tutorial é de extrema importância para você, estudante.
+                    Demonstraremos passo a passo, desde a criação, até a configuração correta da 
+                    funcionalidade.
+
+                    <br>
+                    <br>
+                    <strong>Por.: Bernardo Carneiro</strong>
+                </p>
+            </div>
+        </div>
+        <hr class="my-4">
+        <div class="row" id="tutorial-item" onclick="openPage('file:///C:/Users/PC_USER/Documents/Projetos/TrabalhoDeBases/configRemote.html')">
+            <div class="col-4">
+                <img src="./thumbs/acessoRemoto.png" alt="tutorial" id="tutorial-img">
+            </div>
+            <div class="col-8">
+                <h1>Configuração de Acesso Remoto</h1>
+                <p>
+                    A configuração de Acesso Remoto acaba se tornando crucial para equipes que 
+                    trabalham em escritórios com diversas máquinas. Logo, preste muita atenção
+                    na correta configuração dessa função. Após esse artigo você e a sua equipe
+                    poderão desfrutar dos benefícios dessa tecnologia.
+
+                    <br>
+                    <br>
+                    <strong>Por.: Bernardo Carneiro</strong>
+                </p>
+            </div>
+        </div>
+        <hr class="my-4">
+        <div class="row" id="tutorial-item" onclick="openPage('file:///C:/Users/PC_USER/Documents/Projetos/TrabalhoDeBases/usuario.html')">
+            <div class="col-4">
+                <img src="./thumbs/criacaodeUsuarios.png" alt="tutorial" id="tutorial-img">
+            </div>
+            <div class="col-8">
+                <h1>Criação de usuários</h1>
+                <p>
+                    A criação de usuários é algo básica em qualquer sistema. Sendo assim, é 
+                    extremamente importante que você, nosso leitor, esteja a par de todas as
+                    configurações/especificações.
+
+                    <br>
+                    <br>
+                    <strong>Por.: Bernardo Carneiro</strong>
+                </p>
+            </div>
+        </div>
+        <hr class="my-4">
+        <div class="row" id="tutorial-item" onclick="openPage('file:///C:/Users/PC_USER/Documents/Projetos/TrabalhoDeBases/configDns.html')">
+            <div class="col-4">
+                <img src="./thumbs/dns.png" alt="tutorial" id="tutorial-img">
+            </div>
+            <div class="col-8">
+                <h1>Função DNS</h1>
+                <p>
+                    Partindo para ala do Desenvolvimento Web, a função DNS é de devéras
+                    importância para qualquer desenvolvedor. Você como nosso leitor e possível
+                    entusiasta da área, não pode ficar por fora sobre a Função DNS.
+
+                    <br>
+                    <br>
+                    <strong>Por.: Heitor Hellou</strong>
+                </p>
+            </div>
+        </div>
+        <hr class="my-4">
+        <div class="row" id="tutorial-item" onclick="openPage('file:///C:/Users/PC_USER/Documents/Projetos/TrabalhoDeBases/configDHCP.html')">
+            <div class="col-4">
+                <img src="./thumbs/dhcp.png" alt="tutorial" id="tutorial-img">
+            </div>
+            <div class="col-8">
+                <h1>Função DHCP</h1>
+                <p>
+                    As Redes de Computadores são um dos braços dos Sistemas Computacionais
+                    de base, ou seja, andam lado a lado em quase todos os seus aspectos. 
+                    Conheça hoje a função DHCP e aprenda um pouco de como grandes redes, como
+                    a internet, funcionam.
+
+                    <br>
+                    <br>
+                    <strong>Por.: Heitor Hellou</strong>
+                </p>
+            </div>
+        </div>
+        <hr class="my-4">
+        <div class="row" id="tutorial-item" onclick="openPage('file:///C:/Users/PC_USER/Documents/Projetos/TrabalhoDeBases/configFTP.html')">
+            <div class="col-4">
+                <img src="./thumbs/ftp.png" alt="tutorial" id="tutorial-img">
+            </div>
+            <div class="col-8">
+                <h1>Função FTP</h1>
+                <p>
+                    Nesse artigo, você irá aprender a configurar uma nova função, o FTP!
+                    Então, esteja pronto para mais uma aventura pelo planeta computação.
+
+                    <br>
+                    <br>
+                    <strong>Por.: Bernardo Carneiro</strong>
+                </p>
+            </div>
+        </div>
+        <hr class="my-4">
+        <div class="row" id="tutorial-item" onclick="openPage('file:///C:/Users/PC_USER/Documents/Projetos/TrabalhoDeBases/configIIS.html')">
+            <div class="col-4">
+                <img src="./thumbs/IIS.png" alt="tutorial" id="tutorial-img">
+            </div>
+            <div class="col-8">
+                <h1>Função IIS</h1>
+                <p>
+                    Nesse artigo, você irá aprender a configurar uma nova função, o IIS!
+                    Então, esteja pronto para mais uma aventura pelo planeta computação.
+
+                    <br>
+                    <br>
+                    <strong>Por.: Heitor Hellou</strong>
+                </p>
+            </div>
+        </div>
+        <hr class="my-4">
+    
+    </div>
+
+    <script>
+        function openPage(url){
+            window.open(url)
+        }
+    </script>
+    
+</body>
+</html>

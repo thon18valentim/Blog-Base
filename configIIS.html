@@ -1,0 +1,64 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Base - Configuração de IIS</title>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./images/computador.png">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light" id="navTop">
+        <a class="navbar-brand" href="index.html">VM LEARNING</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon">
+              <span></span>
+          </span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Welcome<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Learning<span class="sr-only">(current)</span></a>
+            </li>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="jumbotron" id="tutorial-header">
+                    <h1>Configuração de IIS</h1>
+                    <h6>Autor: Heitor Hellou</h6>
+                    <hr class="my-4">
+                    <h5>Criação do IIS</h5>
+                    <p>
+                        Em gerenciador de servidores, selecionar a aba Funções e Adicionar Funções. 
+                        Na nova aba prosseguir para selecionar a opção de Servidor Web (IIS) e clicar 
+                        em adicionar recursos necessários. Prosseguir até parte de serviços de função 
+                        e selecionar todos os checkbox de Recursos HTTP Comuns, todos os checkbox de 
+                        Desenvolvimento de Aplicativos, nas abas de Integridade e Diagnósticos e Segurança 
+                        e Desempenho pode deixar como está. Marcar todos nas abas de Ferramentas de gerenciamento 
+                        e Serviço de Publicação FTP. Prosseguir para concluir com a instalação.
+                    </p>
+                    <h5>Testes</h5>
+                    <p>
+                        Em Iniciar selecione Ferramentas Administrativas -> Gerenciador de Serviços de Informações da Internet, 
+                        selecionar o servidor e selecionar sua subpasta Sites e verificar se o status do site está em Iniciado. 
+                        Na máquina do cliente, acessar o browser de internet e entrar com o nome definido anteriormente (ex: server.com).
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

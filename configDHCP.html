@@ -1,0 +1,64 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Base - Configuração do DHCP</title>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./images/computador.png">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light" id="navTop">
+        <a class="navbar-brand" href="index.html">VM LEARNING</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon">
+              <span></span>
+          </span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Welcome<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Learning<span class="sr-only">(current)</span></a>
+            </li>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="jumbotron" id="tutorial-header">
+                    <h1>Configuração de DHCP</h1>
+                    <h6>Autor: Heitor Hellou</h6>
+                    <hr class="my-4">
+                    <h5>Instalar DHCP</h5>
+                    <p>
+                        Em gerenciador de servidores, selecionar a aba Funções e Adicionar Funções. 
+                        Na nova aba prosseguir para selecionar a opção de Servidor DHCP e prosseguir. 
+                        Selecionar o Endereço de IP, prosseguir preenchendo o Domínio Pai com o nome 
+                        do host criado e clicar em validar. Na próxima tela selecionar WINS não é necessário 
+                        aos aplicativos desta rede. Na parte dos escopos adicionar o range de IPs definidos 
+                        para os usuários. Prosseguindo para desabilitar o modo de monitoração de estado de 
+                        DHCPv6. Prosseguir para finalizar a instalação.
+                    </p>
+                    <h5>Testes</h5>
+                    <p>
+                        Na máquina Windows XP configurar a conexão local da rede. Vá em propriedades -> TCP/IP e 
+                        selecionar para obter o endereço de IP e de DNS automaticamente. Com o passo completo basta 
+                        acessar a Prompt de Comando e digitar: ipconfig para verificar as propriedades do IP.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
